@@ -80,9 +80,9 @@ This project demonstrates clean UI design, reusable components, and state manage
 
 ---
 
-## 📸 Preview
+## Live Demo
 
-> Add screenshots or GIF here (recommended for better GitHub presentation)
+https://toggle-feature-panel-i6yffq1g2-harsh-maisuriyas-projects.vercel.app/
 
 ---
 
