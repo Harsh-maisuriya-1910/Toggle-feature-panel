@@ -1,16 +1,109 @@
-# React + Vite
+# 🚀 Toggle Feature Panel (Accordion UI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive **Accordion (Toggle Feature Panel)** built using **React + Vite + Tailwind CSS**.
+This project demonstrates clean UI design, reusable components, and state management using React hooks.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Features
 
-## React Compiler
+✅ Toggle individual sections
+✅ Open all sections at once
+✅ Close all sections at once
+✅ Track active (opened) sections count
+✅ Smooth animations and transitions
+✅ Clean and reusable component structure
+✅ Responsive and modern UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚛️ React (Functional Components + Hooks)
+⚡ Vite (Fast build tool)
+🎨 Tailwind CSS (Styling)
+🎯 JavaScript (ES6+)
+
+---
+
+## 🧠 Core Logic
+
+### 🔹 State Management
+
+* Uses `useState` to manage accordion data
+* Each item contains:
+
+  ```
+  {
+    id,
+    name,
+    isOpen
+  }
+  ```
+
+### 🔹 Toggle Logic
+
+* Toggle single item:
+
+  ```
+  item.id === id ? { ...item, isOpen: !item.isOpen } : item
+  ```
+
+* Open all:
+
+  ```
+  isOpen: true
+  ```
+
+* Close all:
+
+  ```
+  isOpen: false
+  ```
+
+### 🔹 Active Count
+
+* Counts open sections dynamically:
+
+  ```
+  data.filter(item => item.isOpen).length
+  ```
+
+---
+
+## 🎨 UI Highlights
+
+* Smooth expand/collapse animation
+* Chevron icon rotation on toggle
+* Dark theme design
+* Tailwind utility-based styling
+
+---
+
+## 📸 Preview
+
+> Add screenshots or GIF here (recommended for better GitHub presentation)
+
+---
+
+## 🚀 Future Improvements
+
+* 🔹 Add search/filter functionality
+* 🔹 Persist state using localStorage
+* 🔹 Add API-based dynamic content
+* 🔹 Add keyboard accessibility
+* 🔹 Convert into reusable npm package
+
+---
+
+## 👨‍💻 Author
+
+**Harsh Maisuriya**
+
+* GitHub: https://github.com/Harsh-maisuriya-1910
+* LinkedIn: https://www.linkedin.com/in/harsh-maisuriya-b02783276/
+
+---
+
+⭐ If you like this project, don't forget to give it a star!
+
